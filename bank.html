@@ -25,6 +25,43 @@
        .balance{
         background-color: rgba(66, 154, 124, 0.568);
        }
+
+       /* Section 02 */
+       .section2{
+        margin-top: 12px;
+        display: flex;
+        justify-content: center;
+        gap: 20px;
+       }
+       .card1{
+        padding: 20px 92px;
+       }
+       .deposite1{
+        color: white;
+        background-color: rgba(0, 0, 0, 0.484);
+       }
+       .withdraw1{
+        background-color: rgba(255, 0, 0, 0.516);
+       }
+       #deposite{
+        padding: 8px;
+        outline: transparent;
+        border: none;
+       }
+       #deposite-btn,#withdraw-btn{
+        margin-top: 8px;
+        padding: 8px;
+        border: none;
+        border-radius: 5px;
+        
+       }
+       #deposite-btn{
+        background-color: greenyellow;
+       }
+       #withdraw-btn{
+        background-color: rgba(221, 255, 0, 0.829);
+       }
+
        @media screen and (min-width:577px) and ((max-width:992px)) {
         .section1{
             display: grid;
@@ -38,6 +75,7 @@
             font-size: 22px;
         }
        }
+      
 
        @media screen and (max-width:576px) {
         .section1{
@@ -50,12 +88,20 @@
         .heading{
             font-size: 22px;
         }
+        .section2{
+            flex-direction: column;
+        }
+        .card1{
+        text-align: center;
+        padding:10px;
+       }
        }
 
     </style>
 </head>
 <body>
     <h1 class="heading" style="text-align: center;">Welcome to Transaction or deposite or Withdraw Page</h1>
+    <hr>
     <section>
         <div class="section1">
             <div class="card deposite">
@@ -69,6 +115,21 @@
             <div class="card balance">
                 <h1>Balance</h1>
                 <h2>1200$</h2>
+            </div>
+        </div>
+    </section>
+    <!-- User Input value for Deposite and Withdraw -->
+    <section>
+        <div class="section2">
+            <div class="card1 deposite1">
+                <h3>Please Deposite</h3>
+                <input type="text" id="deposite" placeholder="Deposite amount"> <br>
+                <button id="deposite-btn">Deposite</button>
+            </div>
+            <div class="card1 withdraw1">
+                <h3>Withdraw Amount</h3>
+                <input type="text" id="deposite" placeholder="Withdraw amount"> <br>
+                <button id="withdraw-btn">Withdraw</button>
             </div>
         </div>
     </section>
