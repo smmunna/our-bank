@@ -5,9 +5,72 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Banking Page</title>
+    <style>
+        .section1{
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+        }
+       .card{
+        padding: 30px 100px;
+        border-radius: 12px;
+        color: white;
+       }
+       .deposite{
+        background-color: rgba(2, 112, 2, 0.498);
+       }
+       .withdraw{
+        background-color: rgba(176, 176, 61, 0.644);
+       }
+       .balance{
+        background-color: rgba(66, 154, 124, 0.568);
+       }
+       @media screen and (min-width:577px) and ((max-width:992px)) {
+        .section1{
+            display: grid;
+            grid-template-columns: repeat(2,1fr);
+        }
+        .card{
+            padding: 10px;
+           text-align: center;
+        }
+        .heading{
+            font-size: 22px;
+        }
+       }
+
+       @media screen and (max-width:576px) {
+        .section1{
+            flex-direction: column;
+        }
+        .card{
+            padding: 10px;
+           text-align: center;
+        }
+        .heading{
+            font-size: 22px;
+        }
+       }
+
+    </style>
 </head>
 <body>
-    <h2>Welcome to Transaction or deposite or Withdraw Page</h2>
-    
+    <h1 class="heading" style="text-align: center;">Welcome to Transaction or deposite or Withdraw Page</h1>
+    <section>
+        <div class="section1">
+            <div class="card deposite">
+                <h1>Deposite</h1>
+                <h2>5$</h2>
+            </div>
+            <div class="card withdraw">
+                <h1>Withdraw</h1>
+                <h2>100$</h2>
+            </div>
+            <div class="card balance">
+                <h1>Balance</h1>
+                <h2>1200$</h2>
+            </div>
+        </div>
+    </section>
 </body>
 </html>
