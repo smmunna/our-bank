@@ -1,104 +1,123 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Banking Page</title>
     <style>
-        .section1{
+        .section1 {
             display: flex;
             justify-content: center;
             gap: 20px;
         }
-       .card{
-        padding: 30px 100px;
-        border-radius: 12px;
-        color: white;
-       }
-       .deposite{
-        background-color: rgba(2, 112, 2, 0.498);
-       }
-       .withdraw{
-        background-color: rgba(176, 176, 61, 0.644);
-       }
-       .balance{
-        background-color: rgba(66, 154, 124, 0.568);
-       }
 
-       /* Section 02 */
-       .section2{
-        margin-top: 12px;
-        display: flex;
-        justify-content: center;
-        gap: 20px;
-       }
-       .card1{
-        padding: 20px 92px;
-       }
-       .deposite1{
-        color: white;
-        background-color: rgba(0, 0, 0, 0.484);
-       }
-       .withdraw1{
-        background-color: rgba(255, 0, 0, 0.516);
-       }
-       #deposite{
-        padding: 8px;
-        outline: transparent;
-        border: none;
-       }
-       #deposite-btn,#withdraw-btn{
-        margin-top: 8px;
-        padding: 8px;
-        border: none;
-        border-radius: 5px;
-        
-       }
-       #deposite-btn{
-        background-color: greenyellow;
-       }
-       #withdraw-btn{
-        background-color: rgba(221, 255, 0, 0.829);
-       }
+        .card {
+            padding: 30px 100px;
+            border-radius: 12px;
+            color: white;
+        }
 
-       @media screen and (min-width:577px) and ((max-width:992px)) {
-        .section1{
-            display: grid;
-            grid-template-columns: repeat(2,1fr);
+        .deposite {
+            background-color: rgba(2, 112, 2, 0.498);
         }
-        .card{
-            padding: 10px;
-           text-align: center;
-        }
-        .heading{
-            font-size: 22px;
-        }
-       }
-      
 
-       @media screen and (max-width:576px) {
-        .section1{
-            flex-direction: column;
+        .withdraw {
+            background-color: rgba(176, 176, 61, 0.644);
         }
-        .card{
-            padding: 10px;
-           text-align: center;
-        }
-        .heading{
-            font-size: 22px;
-        }
-        .section2{
-            flex-direction: column;
-        }
-        .card1{
-        text-align: center;
-        padding:10px;
-       }
-       }
 
+        .balance {
+            background-color: rgba(66, 154, 124, 0.568);
+        }
+
+        /* Section 02 */
+        .section2 {
+            margin-top: 12px;
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+        }
+
+        .card1 {
+            padding: 20px 92px;
+        }
+
+        .deposite1 {
+            color: white;
+            background-color: rgba(0, 0, 0, 0.484);
+        }
+
+        .withdraw1 {
+            background-color: rgba(255, 0, 0, 0.516);
+        }
+
+        #deposite {
+            padding: 8px;
+            outline: transparent;
+            border: none;
+        }
+
+        #deposite-btn,
+        #withdraw-btn {
+            margin-top: 8px;
+            padding: 8px;
+            border: none;
+            border-radius: 5px;
+
+        }
+
+        #deposite-btn {
+            background-color: greenyellow;
+        }
+
+        #withdraw-btn {
+            background-color: rgba(221, 255, 0, 0.829);
+        }
+
+        @media screen and (min-width:577px) and ((max-width:992px)) {
+            .section1 {
+                display: grid;
+                grid-template-columns: repeat(2, 1fr);
+            }
+
+            .card {
+                padding: 10px;
+                text-align: center;
+            }
+
+            .heading {
+                font-size: 22px;
+            }
+        }
+
+
+        @media screen and (max-width:576px) {
+            .section1 {
+                flex-direction: column;
+            }
+
+            .card {
+                padding: 10px;
+                text-align: center;
+            }
+
+            .heading {
+                font-size: 22px;
+            }
+
+            .section2 {
+                flex-direction: column;
+            }
+
+            .card1 {
+                text-align: center;
+                padding: 10px;
+            }
+        }
     </style>
 </head>
+
 <body>
     <h1 class="heading" style="text-align: center;">Welcome to Transaction or deposite or Withdraw Page</h1>
     <hr>
@@ -134,4 +153,5 @@
         </div>
     </section>
 </body>
+
 </html>
