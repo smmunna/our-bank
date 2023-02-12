@@ -12,11 +12,20 @@ document.getElementById('withdraw-btn').addEventListener('click',function(){
     
 
     const withdrawnTotal = prevBalanceFieldFloat+withdrawAmoutFloat;
+   
     preBalanceField.innerText = withdrawnTotal;
 
     const finalBalanceField = document.getElementById('balance');
-    const finalBalanceFieldFloat = parseFloat(finalBalanceField.innerText)
-    const finalAmount = finalBalanceFieldFloat - withdrawAmoutFloat;
-
-    finalBalanceField.innerText = finalAmount;
+    const finalBalanceFieldFloat = parseFloat(finalBalanceField.innerText);
+    
+    if(withdrawAmoutFloat>finalBalanceFieldFloat){
+        alert('Not Enough Money');
+        preBalanceField.innerText = prevBalanceFieldFloat;
+    }
+    else{
+        const finalAmount = finalBalanceFieldFloat - withdrawAmoutFloat;
+        finalBalanceField.innerText=finalAmount;
+       
+    }
+    
 })
